@@ -202,9 +202,9 @@ export function SearchDialog() {
       <Dialog open={open}>
         <DialogContent className="sm:max-w-[850px] text-black">
           <DialogHeader>
-            <DialogTitle>AI 法律助手</DialogTitle>
+            <DialogTitle>法律小助手</DialogTitle>
             <DialogDescription>
-              我是您的法律助手，请输入您想查询的问题
+              我是您的法律小助手，请输入您想查询的问题
             </DialogDescription>
             <hr />
             <button className="absolute top-0 right-2 p-2" onClick={() => setOpen(false)}>
@@ -254,7 +254,7 @@ export function SearchDialog() {
 
               <div className="relative">
                 <Input
-                  placeholder="输入法律问题..."
+                  placeholder="请输入法律问题..."
                   name="search"
                   value={search}
                   onChange={(e) => setSearch(e.target.value)}
@@ -311,10 +311,10 @@ export function SearchDialog() {
             </div>
             <DialogFooter>
               <div className="text-xs text-gray-500 mt-4 md:m-0 dark:text-gray-100">
-                * 回答由 AI 检索法律文件后生成，不保证准确率，仅供参考学习！<a href="https://afdian.net/a/lvwzhen/plan" className='ml-1 underline decoration-wavy decoration-indigo-500 underline-offset-2 hover:text-indigo-500' target='_blank'>打赏赞助</a>
+                * 回答由 AI 检索法律文件后生成，不保证准确率，仅供参考学习！
               </div>
               <Button type="submit" className="bg-red-500 block w-full md:w-auto md:inline-block">
-                Ask
+                求助
               </Button>
             </DialogFooter>
           </form>
